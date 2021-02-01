@@ -41,7 +41,7 @@
     <img src="logo/icon-alone.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">MarComHQ</h3>
+  <a href="https://rivuletdom.github.io/MarCom-API-Testing/"><h3 align="center">MarComHQ</h3></a>
 
   <p align="center">
     A CUSTOM, INTEGRATED DASHBOARD PUTTING ALL OF YOUR MARKETING CONCERNS AT YOUR FINGERTIPS
