@@ -209,16 +209,12 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-[contributors-shield]: https://img.shields.io/github/commit-activity/m/RivuletDom/apitesting?style=flat-square
-[contributors-url]: https://github.com/RivuletDom/apitesting/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/RivuletDom/apitesting)
+![GitHub contributors](https://img.shields.io/github/contributors/RivuletDom/apitesting)
+![GitHub last commit](https://img.shields.io/github/last-commit/RivuletDom/apitesting)
+![Website](https://img.shields.io/website?url=http%3A%2F%2Fapp.marcomhq.com%2F)
+![GitHub](https://img.shields.io/github/license/RivuletDom/apitesting)
+![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
+![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
 [product-screenshot]: images/screenshot.png
