@@ -119,7 +119,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/RivuletDom/apitesting.git
    ```
 2. Install NPM packages
    ```sh
@@ -167,9 +167,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [Tarang Chokshi](https://www.tarangchokshi.in) - tarang@rivuletdigital.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/RivuletDom/apitesting](https://github.com/RivuletDom/apitesting)
 
 
 
