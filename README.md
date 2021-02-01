@@ -24,7 +24,6 @@
 -->
 
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/RivuletDom/apitesting)
 ![GitHub contributors](https://img.shields.io/github/contributors/RivuletDom/apitesting)
 ![GitHub last commit](https://img.shields.io/github/last-commit/RivuletDom/apitesting)
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Fapp.marcomhq.com%2F)
