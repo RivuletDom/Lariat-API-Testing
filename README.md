@@ -22,12 +22,16 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/RivuletDom/apitesting)
+![GitHub contributors](https://img.shields.io/github/contributors/RivuletDom/apitesting)
+![GitHub last commit](https://img.shields.io/github/last-commit/RivuletDom/apitesting)
+![Website](https://img.shields.io/website?url=http%3A%2F%2Fapp.marcomhq.com%2F)
+![GitHub](https://img.shields.io/github/license/RivuletDom/apitesting)
+![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
+![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
 
 
 
@@ -208,12 +212,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 
-
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/RivuletDom/apitesting)
-![GitHub contributors](https://img.shields.io/github/contributors/RivuletDom/apitesting)
-![GitHub last commit](https://img.shields.io/github/last-commit/RivuletDom/apitesting)
-![Website](https://img.shields.io/website?url=http%3A%2F%2Fapp.marcomhq.com%2F)
-![GitHub](https://img.shields.io/github/license/RivuletDom/apitesting)
-![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
-![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
