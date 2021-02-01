@@ -217,4 +217,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 ![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
 ![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
-[product-screenshot]: images/screenshot.png
