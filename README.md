@@ -47,14 +47,14 @@
   <p align="center">
     A CUSTOM, INTEGRATED DASHBOARD PUTTING ALL OF YOUR MARKETING CONCERNS AT YOUR FINGERTIPS
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing/issues">Request Feature</a>
   </p>
 </p>
 
@@ -132,15 +132,11 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/RivuletDom/MarCom-API-Testing.git
    ```
 3. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 
@@ -184,9 +180,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tarang Chokshi  - tarang@rivuletdigital.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/RivuletDom/MarCom-API-Testing](https://github.com/RivuletDom/MarCom-API-Testing)
 
 
 
