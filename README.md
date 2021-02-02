@@ -31,7 +31,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
 ![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
-![GitHub Release Date](https://img.shields.io/github/release-date/RivuletDom/MarCom-API-Testing)
+![GitHub Last Release](https://img.shields.io/github/release-date/RivuletDom/MarCom-API-Testing)
 
 
 
