@@ -1,16 +1,18 @@
-package apitesting;
+package MarComAPI;
 
 import org.json.simple.JSONObject;
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import BaseAPI.login;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class api2 extends login{
+public class UserProfile extends login{
   @Test
-  public void f() {   
+  public void accessProfile() {   
 		
 	  String token = login_marcom();
 
@@ -33,9 +35,6 @@ public class api2 extends login{
 
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
-		String token1 = response.getBody().jsonPath().get("data.access_token");
-		System.out.println("token : " + token1);
-
-		Assert.assertEquals(statusCode, 200);
+		AssertJUnit.assertEquals(statusCode, 200);
 	}
 }
