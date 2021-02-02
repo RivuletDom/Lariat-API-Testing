@@ -35,5 +35,6 @@ public class login {
 		Assert.assertEquals(statusCode, 200);
 		return response.getBody().jsonPath().get("data.access_token");
 
+		
 	}
 }
