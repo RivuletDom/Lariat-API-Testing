@@ -48,7 +48,7 @@
   <p align="center">
     A CUSTOM, INTEGRATED DASHBOARD PUTTING ALL OF YOUR MARKETING CONCERNS AT YOUR FINGERTIPS
     <br />
-    <a href="https://github.com/RivuletDom/MarCom-API-Testing"><strong>Explore the docs Â»</strong></a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/RivuletDom/MarCom-API-Testing">View Demo</a>
