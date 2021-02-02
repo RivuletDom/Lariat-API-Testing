@@ -40,7 +40,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/RivuletDom/apitesting">
-    <img src="logo/icon-alone.png" alt="Logo" width="80" height="80">
+    <img src="https://app.marcomhq.com/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
   <a href="https://rivuletdom.github.io/MarCom-API-Testing/"><h3 align="center">MarComHQ</h3></a>
