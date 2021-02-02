@@ -1,3 +1,4 @@
+package apitesting;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,8 +8,9 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class login {
-  @Test
+	
  
+ @Test
   public void login_marcom()
   {   
 		
@@ -31,7 +33,7 @@ public class login {
 		 System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 //		 System.out.println("token : " + (response.getBody().jsonPath().get("data.access_token")));
 		 
-		 String token = response.getBody().jsonPath().get("data.access_token");
+		String token = response.getBody().jsonPath().get("data.access_token");
 		 System.out.println("token : " +token);
 		
 		 Assert.assertEquals(statusCode, 200);
