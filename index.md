@@ -31,6 +31,8 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/RivuletDom/apitesting)
 ![GitHub all releases](https://img.shields.io/github/downloads/RivuletDom/apitesting/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/RivuletDom/apitesting)
+![GitHub Last Release](https://img.shields.io/github/release-date/RivuletDom/MarCom-API-Testing)
+
 
 
 
@@ -38,22 +40,22 @@
 <br />
 <p align="center">
   <a href="https://github.com/RivuletDom/apitesting">
-    <img src="https://app.marcomhq.com/favicon.png" alt="Logo" width="80" height="80">
+    <img src="logo/icon-alone.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">MarComHQ</h3>
+  <a href="https://rivuletdom.github.io/MarCom-API-Testing/"><h3 align="center">MarComHQ</h3></a>
 
   <p align="center">
     A CUSTOM, INTEGRATED DASHBOARD PUTTING ALL OF YOUR MARKETING CONCERNS AT YOUR FINGERTIPS
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing"><strong>Explore the docs Â»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing">View Demo</a>
+    Â·
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing/issues">Report Bug</a>
+    Â·
+    <a href="https://github.com/RivuletDom/MarCom-API-Testing/issues">Request Feature</a>
   </p>
 </p>
 
@@ -131,15 +133,11 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/RivuletDom/MarCom-API-Testing.git
    ```
 3. Install NPM packages
    ```sh
    npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 
@@ -183,9 +181,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tarang Chokshi  - tarang@rivuletdigital.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/RivuletDom/MarCom-API-Testing](https://github.com/RivuletDom/MarCom-API-Testing)
 
 
 
