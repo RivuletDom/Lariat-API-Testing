@@ -14,7 +14,6 @@ public class login {
  public static String password = "marcom2020";
  public static int user_id = 58 ;
  public static int workspace_id =278054311 ;
-// public  String token1 = "";
  
 	
  @Test
