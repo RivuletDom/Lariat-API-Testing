@@ -12,7 +12,7 @@ public class login {
  public static String barriertoken = "";
  public static String email = "marcom.jassi@gmail.com";
  public static String password = "marcom2020";
- public static int user_id = ;
+// public static int user_id = ;
  
 	
  @Test
