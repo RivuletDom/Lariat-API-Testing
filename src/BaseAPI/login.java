@@ -45,6 +45,5 @@ public class login {
 		
 		return response.getBody().jsonPath().get("data.access_token");
 
-		
 	}
 }
