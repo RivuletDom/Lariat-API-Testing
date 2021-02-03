@@ -12,7 +12,9 @@ public class login {
  public static String barriertoken = "";
  public static String email = "marcom.jassi@gmail.com";
  public static String password = "marcom2020";
-// public static int user_id = ;
+ public static int user_id = 58 ;
+ public static int workspace_id =278054311 ;
+// public  String token1 = "";
  
 	
  @Test
@@ -37,6 +39,10 @@ public class login {
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
 		Assert.assertEquals(statusCode, 200);
+		
+//		token1 = response.getBody().jsonPath().get("data.access_token");
+//		System.out.println("Token of Email id "+ email + " is " + token1);
+		
 		return response.getBody().jsonPath().get("data.access_token");
 
 		

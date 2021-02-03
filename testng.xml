@@ -3,7 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name=".UserProfile"/>
+      <class name="MarComAPI.ViewProjectTask"/>
+      <class name="MarComAPI.MyTaskList"/>
+      <class name="MarComAPI.AllProjectList"/>
+      <class name="MarComAPI.UserProfile"/>
+      <class name="MarComAPI.UserList"/>
+      <class name="MarComAPI.ClientContactPerson"/>
+      <class name="MarComAPI.ClientList"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

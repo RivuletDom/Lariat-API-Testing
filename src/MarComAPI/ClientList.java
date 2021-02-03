@@ -5,16 +5,17 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import BaseAPI.login;
+import groovyjarjarantlr4.v4.parse.GrammarTreeVisitor.tokenSpec_return;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class UserProfile extends login {
+public class ClientList extends login {
 	
 	@Test
 	public void accessProfile() throws Throwable {
 
-		System.out.println(" *** API: User Profile Details *** \n" );
+		System.out.println(" *** API: Client List ***  \n" );
 
 		String token = login_marcom();
 		
@@ -25,12 +26,15 @@ public class UserProfile extends login {
 		request.header("Authorization", "Bearer " + token);
 
 		JSONObject requestParams = new JSONObject();
-		requestParams.put("user_id", user_id);
 		requestParams.put("workspace_id", workspace_id);
+		requestParams.put("search_name", "");
+		requestParams.put("sort_value", "company_name");
+		requestParams.put("sort_by", "ASC");
+		requestParams.put("is_archive", "1");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/user/details?url_workspace_id=278054311");
+		Response response = request.post("api/v1/client/list?page=1&url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
