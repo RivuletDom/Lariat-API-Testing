@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      
-      <class name="apitesting.login"/>
-      <class name="apitesting.api2"/>
+      <class name=".UserProfile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

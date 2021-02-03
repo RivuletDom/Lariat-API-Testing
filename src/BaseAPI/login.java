@@ -10,6 +10,10 @@ import io.restassured.specification.RequestSpecification;
 public class login {
 	
  public static String barriertoken = "";
+ public static String email = "marcom.jassi@gmail.com";
+ public static String password = "marcom2020";
+ public static int user_id = ;
+ 
 	
  @Test
   public String login_marcom()
@@ -20,8 +24,8 @@ public class login {
 		request.header("Content-Type", "application/json");
 
 		JSONObject requestParams = new JSONObject();
-		requestParams.put("email", "marcom.jassi@gmail.com");
-		requestParams.put("password", "marcom2020");
+		requestParams.put("email", email);
+		requestParams.put("password", password);
 
 		request.body(requestParams.toJSONString());
 
