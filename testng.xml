@@ -5,7 +5,7 @@
     <classes>
       <class name="MarComAPI.ViewProjectTask"/>
       <class name="MarComAPI.MyTaskList"/>
-      <class name="BaseAPI.login"/>
+      <class name="MarComAPI.login"/>
       <class name="MarComAPI.AllProjectList"/>
       <class name="MarComAPI.UserProfile"/>
       <class name="MarComAPI.UserList"/>
