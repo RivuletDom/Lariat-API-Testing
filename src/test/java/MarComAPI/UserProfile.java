@@ -11,7 +11,7 @@ import io.restassured.specification.RequestSpecification;
 public class UserProfile extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void UserProfileDetails() throws Throwable {
 
 		System.out.println(" *** API: User Profile Details *** \n" );
 

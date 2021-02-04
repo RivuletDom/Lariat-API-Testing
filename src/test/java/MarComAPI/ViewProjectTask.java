@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class ViewProjectTask extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void ViewTaskDetail() throws Throwable {
 
 		System.out.println(" *** API: View Project Tasks ***  \n" );
 		

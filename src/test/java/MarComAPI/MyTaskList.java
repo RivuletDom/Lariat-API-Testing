@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class MyTaskList extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void TaskList() throws Throwable {
 
 		System.out.println(" *** API: My Task List ***  \n" );
 

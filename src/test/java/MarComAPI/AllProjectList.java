@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class AllProjectList extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void projectList() throws Throwable {
 
 		System.out.println(" *** API: All Project List  *** \n" );
 

@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class UserList extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void AllUserList() throws Throwable {
 
 		System.out.println(" *** API: User List ***  \n" );
 

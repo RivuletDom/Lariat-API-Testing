@@ -12,7 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class ClientContactPerson extends login {
 	
 	@Test
-	public void accessProfile() throws Throwable {
+	public void ClientContactPersonDetail() throws Throwable {
 
 		System.out.println(" *** API: List of Client Contact Person  *** \n" );
 
