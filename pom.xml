@@ -12,7 +12,7 @@
 	<properties>
 
 		<!-- <suiteXmlFile>src/main/resources/TestEnvironment.xml</suiteXmlFile> -->
-		<suiteXmlFile>testng.xml</suiteXmlFile>
+		<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
 
 		<skiptest>false</skiptest>
 	</properties>
@@ -83,7 +83,7 @@
 
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
