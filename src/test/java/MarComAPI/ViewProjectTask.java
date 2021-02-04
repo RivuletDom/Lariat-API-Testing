@@ -1,4 +1,4 @@
-package MarComAPI;
+package test.java.MarComAPI;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;

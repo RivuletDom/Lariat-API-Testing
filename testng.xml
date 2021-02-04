@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="MarComAPI.ViewProjectTask"/>
-      <class name="MarComAPI.MyTaskList"/>
-      <class name="MarComAPI.login"/>
-      <class name="MarComAPI.AllProjectList"/>
-      <class name="MarComAPI.UserProfile"/>
-      <class name="MarComAPI.UserList"/>
-      <class name="MarComAPI.ClientContactPerson"/>
-      <class name="MarComAPI.ClientList"/>
+      <class name="test.java.MarComAPI.login"/>
+      <class name="test.java.MarComAPI.ViewProjectTask"/>
+      <class name="test.java.MarComAPI.ClientContactPerson"/>
+      <class name="test.java.MarComAPI.AllProjectList"/>
+      <class name="test.java.MarComAPI.ClientList"/>
+      <class name="test.java.MarComAPI.UserList"/>
+      <class name="test.java.MarComAPI.MyTaskList"/>
+      <class name="test.java.MarComAPI.UserProfile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
