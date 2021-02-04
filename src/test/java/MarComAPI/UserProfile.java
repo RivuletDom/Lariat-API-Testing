@@ -10,7 +10,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class UserProfile extends login {
 	
-	@Test
+	@Test (priority = 2)
 	public void UserProfileDetails() throws Throwable {
 
 		System.out.println(" *** API: User Profile Details *** \n" );
