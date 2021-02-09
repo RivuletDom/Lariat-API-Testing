@@ -39,8 +39,6 @@ public class MyTaskList extends login {
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
-		System.out.println("The status code recieved: " + statusCode);
-
 
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
