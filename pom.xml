@@ -10,10 +10,6 @@
 
 	<packaging>jar</packaging>
 	<properties>
-
-		<!-- <suiteXmlFile>src/main/resources/TestEnvironment.xml</suiteXmlFile> -->
-		<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
-
 		<skiptest>false</skiptest>
 	</properties>
 
