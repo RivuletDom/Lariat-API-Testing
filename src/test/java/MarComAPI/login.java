@@ -40,7 +40,6 @@ public class login {
 
 //		token1 = response.getBody().jsonPath().get("data.access_token");
 //		System.out.println("Token of Email id "+ email + " is " + token1);
-
 		return response.getBody().jsonPath().get("data.access_token");
 
 	}
