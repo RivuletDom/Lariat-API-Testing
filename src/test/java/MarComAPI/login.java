@@ -22,7 +22,7 @@ public class login {
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
-
+ss
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("email", email);
 		requestParams.put("password", password);
