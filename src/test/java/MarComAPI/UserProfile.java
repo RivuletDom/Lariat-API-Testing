@@ -9,21 +9,20 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class UserProfile extends login {
-	
-	@Test (priority = 2)
+
+	@Test(priority = 2)
 	public void UserProfileDetails() throws Throwable {
 
-		System.out.println(" *** API: User Profile Details *** \n" );
+		System.out.println(" *** API: User Profile Details *** \n");
 
 		String token = login_marcom();
-		
+
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
 		System.out.println("Token : " + token);
 		request.header("Authorization", "Bearer " + token);
 
-		
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("user_id", user_id);
 		requestParams.put("workspace_id", workspace_id);

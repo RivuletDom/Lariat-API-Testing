@@ -9,14 +9,14 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class ViewProjectTask extends login {
-	
+
 	@Test
 	public void ViewTaskDetail() throws Throwable {
 
-		System.out.println(" *** API: View Project Tasks ***  \n" );
-		
+		System.out.println(" *** API: View Project Tasks ***  \n");
+
 		String token = login_marcom();
-		
+
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -38,7 +38,7 @@ public class ViewProjectTask extends login {
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
 		AssertJUnit.assertEquals(statusCode, 200);
-		
+
 		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
 	}

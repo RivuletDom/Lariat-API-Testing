@@ -9,14 +9,14 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class UserList extends login {
-	
+
 	@Test
 	public void AllUserList() throws Throwable {
 
-		System.out.println(" *** API: User List ***  \n" );
+		System.out.println(" *** API: User List ***  \n");
 
 		String token = login_marcom();
-		
+
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -32,7 +32,8 @@ public class UserList extends login {
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/user/list?page=1&type=Users&sort_value=&sort_by=&url_workspace_id=278054311");
+		Response response = request
+				.post("api/v1/user/list?page=1&type=Users&sort_value=&sort_by=&url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);

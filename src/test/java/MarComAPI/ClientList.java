@@ -9,14 +9,14 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class ClientList extends login {
-	
+
 	@Test
 	public void Clientlist() throws Throwable {
 
-		System.out.println(" *** API: Client List ***  \n" );
+		System.out.println(" *** API: Client List ***  \n");
 
 		String token = login_marcom();
-		
+
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -43,5 +43,6 @@ public class ClientList extends login {
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
+
 	}
 }
