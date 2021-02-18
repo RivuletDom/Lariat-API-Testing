@@ -14,7 +14,7 @@ public class EditClientContactPerson extends login {
 	@Test
 	public void EditClientDetails() throws Throwable {
 
-		System.out.println(" *** API: All report data of projects***  \n");
+		System.out.println(" *** API: Edit Client Contact Person Details ***  \n");
 
 		String token = login_marcom();
 
@@ -26,23 +26,17 @@ public class EditClientContactPerson extends login {
 
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
-		
-		/*JSONArray jsonArray1 = new JSONArray();
-		jsonArray1.put("278054311");*/
-		JSONArray jsonarray = new JSONArray();
-                
-//        jsonarray.put("278054311");
-                
-		
-		requestParams.put("accessibleWorkspaces", "\"278054311\"");
-		
-		
-		requestParams.put("user_id", "60");
-		requestParams.put("date", "2020-11-6");
+		requestParams.put("client_id", "71");
+		requestParams.put("person_id", "6");
+		requestParams.put("full_name", "Rajesh Kumar");
+		requestParams.put("email", "rajesh@texasaol.com"); //non-editable field. just static value of user email
+		requestParams.put("phone_number", "1236547896");
+		requestParams.put("user_or_not", "1");
+		requestParams.put("show_in_list", "1");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/timetrack/day/all-data?url_workspace_id=278054311");
+		Response response = request.post("api/v1/client/update-contact-person?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
