@@ -78,6 +78,7 @@
 				<version>2.19.1</version>
 
 				<configuration>
+				<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
