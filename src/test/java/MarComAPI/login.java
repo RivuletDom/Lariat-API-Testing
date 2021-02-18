@@ -16,7 +16,7 @@ public class login {
 	public static int user_id = 58;
 	public static int workspace_id = 278054311;
 
-	@Test(priority = 1)
+	@Test
 	public String login_marcom() {
 
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";

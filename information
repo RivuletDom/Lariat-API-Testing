@@ -4,3 +4,46 @@ www.tarangchokshi.in
 sonar - API
 
 e8b21c95b8610c1757b972a45172c9abaa7e7a42
+
+API List
+
+----Login
+----Get user details
+----User list
+----Client list
+edit client
+----view client contact person
+update client contact person
+----All Project list
+----My task list
+----view project task
+All time all data
+all projects data
+list all departments
+view login user profile
+user roles and persmission
+add budget comment
+list budget comment
+add general comment
+add client comment
+list client comment
+add project task
+add task comment
+view project details
+project client detail
+bucket list
+bucket project list
+get activity log
+time dat list
+export coll project
+Bucket report
+detailed report list
+export detailed report list
+details report all data
+dashboard data
+dashboard my task list
+dashboard fav project list
+dashboard recent project
+dashboard activity log
+get recent search data
+
