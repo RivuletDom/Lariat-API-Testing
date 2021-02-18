@@ -4,6 +4,7 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="test.java.MarComAPI.login" />
+			<!-- <class name="test.java.MarComAPI.EditClient"/> -->
 			<class name="test.java.MarComAPI.ViewProjectTask" />
 			<class name="test.java.MarComAPI.ClientContactPerson" />
 			<class name="test.java.MarComAPI.AllProjectList" />
@@ -11,7 +12,6 @@
 			<class name="test.java.MarComAPI.UserList" />
 			<class name="test.java.MarComAPI.MyTaskList" />
 			<class name="test.java.MarComAPI.UserProfile" />
-			<class name="test.java.MarComAPI.EditClient" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
