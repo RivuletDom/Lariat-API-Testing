@@ -18,7 +18,6 @@ public class login {
 
 	@Test
 	public String login_marcom() {
-		System.out.println("xxx");
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
