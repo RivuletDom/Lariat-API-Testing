@@ -39,6 +39,6 @@ public class UserProfile extends login {
 		AssertJUnit.assertEquals(statusCode, 200);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
-		Thread.sleep(3000);
+		Thread.sleep(3000); 
 	}
 }
