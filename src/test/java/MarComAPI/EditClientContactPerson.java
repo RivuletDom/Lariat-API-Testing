@@ -31,7 +31,7 @@ public class EditClientContactPerson extends login {
 		jsonArray1.put("278054311");*/
 		JSONArray jsonarray = new JSONArray();
                 
-        jsonarray.put("278054311");
+//        jsonarray.put("278054311");
                 
 		
 		requestParams.put("accessibleWorkspaces", "\"278054311\"");
