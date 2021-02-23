@@ -6,14 +6,28 @@
 			<class name="test.java.MarComAPI.login" />
 			<class name="test.java.MarComAPI.EditClient" />
 			<class name="test.java.MarComAPI.EditClientContactPerson" />
+			<class name="test.java.MarComAPI.ListGeneralComment" />
 			<class name="test.java.MarComAPI.ViewProjectTask" />
-			<class name="test.java.MarComAPI.ClientContactPerson" />
-			<class name="test.java.MarComAPI.AllProjectList" />
+			<class name="test.java.MarComAPI.ListAllDepartments" />
 			<class name="test.java.MarComAPI.ClientList" />
-			<class name="test.java.MarComAPI.AllReportData" />
-			<class name="test.java.MarComAPI.UserList" />
-			<class name="test.java.MarComAPI.MyTaskList" />
+			<class name="test.java.MarComAPI.ViewLoginUserProfile" />
+			<class name="test.java.MarComAPI.ListClientComment" />
 			<class name="test.java.MarComAPI.UserProfile" />
+			<class name="test.java.MarComAPI.AllProjectList" />
+			<class name="test.java.MarComAPI.ListBudgetComment" />
+			<class name="test.java.MarComAPI.AddGeneralComment" />
+			<class name="test.java.MarComAPI.AddProjectTask" />
+			<class name="test.java.MarComAPI.AllReportData" />
+			<class name="test.java.MarComAPI.UserRolesPermission" />
+			<class name="test.java.MarComAPI.AddClientComment" />
+			<class name="test.java.MarComAPI.ClientContactPerson" />
+			<class name="test.java.MarComAPI.UserList" />
+			<class name="test.java.MarComAPI.ViewProjectClientDetails" />
+			<class name="test.java.MarComAPI.AddTaskComment" />
+			<class name="test.java.MarComAPI.ViewProjectDetails" />
+			<class name="test.java.MarComAPI.ViewBucketList" />
+			<class name="test.java.MarComAPI.MyTaskList" />
+			<class name="test.java.MarComAPI.AddBudgetComment" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
