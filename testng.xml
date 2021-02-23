@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="test.java.MarComAPI.General.ClientContactPerson"/>
-      <class name="test.java.MarComAPI.Project.ViewProjectDetails"/>
-      <class name="test.java.MarComAPI.Bucket.ViewBucketList"/>
-      <class name="test.java.MarComAPI.Project.AddClientComment"/>
-      <class name="test.java.MarComAPI.Timetrack.AllReportData"/>
-      <class name="test.java.MarComAPI.Login.login"/>
-      <class name="test.java.MarComAPI.Project.ListClientComment"/>
-      <class name="test.java.MarComAPI.General.ListAllDepartments"/>
-      <class name="test.java.MarComAPI.Project.AddBudgetComment"/>
-      <class name="test.java.MarComAPI.Project.AddGeneralComment"/>
-      <class name="test.java.MarComAPI.Tasks.ViewProjectTask"/>
-      <class name="test.java.MarComAPI.Tasks.AddProjectTask"/>
-      <class name="test.java.MarComAPI.Project.ListBudgetComment"/>
-      <class name="test.java.MarComAPI.General.UserRolesPermission"/>
-      <class name="test.java.MarComAPI.Tasks.MyTaskList"/>
-      <class name="test.java.MarComAPI.General.EditClient"/>
-      <class name="test.java.MarComAPI.Project.ListGeneralComment"/>
-      <class name="test.java.MarComAPI.General.UserList"/>
-      <class name="test.java.MarComAPI.General.UserProfile"/>
-      <class name="test.java.MarComAPI.Project.AllProjectList"/>
-      <class name="test.java.MarComAPI.Tasks.AddTaskComment"/>
-      <class name="test.java.MarComAPI.General.ClientList"/>
-      <class name="test.java.MarComAPI.Project.ViewProjectClientDetails"/>
-      <class name="test.java.MarComAPI.General.EditClientContactPerson"/>
-      <class name="test.java.MarComAPI.General.ViewLoginUserProfile"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<packages>
+			<package name="test.java.MarComAPI.Login" />
+			<package name="test.java.MarComAPI.General" />
+			<package name="test.java.MarComAPI.Project" />
+			<package name="test.java.MarComAPI.Tasks" />
+			<package name="test.java.MarComAPI.Bucket" />
+			<package name="test.java.MarComAPI.Timetrack" />
+		</packages>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
