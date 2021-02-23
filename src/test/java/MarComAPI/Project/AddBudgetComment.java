@@ -1,6 +1,5 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Project;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -8,13 +7,14 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class ListAllDepartments extends login {
+public class AddBudgetComment extends login {
 
-	@Test
-	public void ListDepartments() throws Throwable {
+	@Test(priority = 2)
+	public void AddingBudgetComment() throws Throwable {
 
-		System.out.println(" *** API: List All Departments of workspace***  \n");
+		System.out.println(" *** API: Add Budget Comment in Project *** \n");
 
 		String token = login_marcom();
 
@@ -26,19 +26,23 @@ public class ListAllDepartments extends login {
 
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
+		requestParams.put("project_id", "1340298153");
+		requestParams.put("published", "1");
+		requestParams.put("dom_render_id", "15");
+		requestParams.put("comment", "This is Budget Comment added by API - Tarang");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/departments/list?url_workspace_id=278054311");
+		Response response = request.post("api/v1/project/comment/budget/add?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
-		System.out.println("/n Response body: " + response.getBody().jsonPath().prettify());
+
+		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
 		AssertJUnit.assertEquals(statusCode, 200);
 
-		System.out.println("\n\n ----------------------------------------------- \n\n");
-		Thread.sleep(3000);
-
+		System.out.println("\n\n ------------------------------------------------ \n\n");
+		Thread.sleep(3000); 
 	}
 }

@@ -1,6 +1,5 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.General;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -8,13 +7,14 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class AllReportData extends login {
+public class ClientList extends login {
 
 	@Test
-	public void EditClientDetails() throws Throwable {
+	public void Clientlist() throws Throwable {
 
-		System.out.println(" *** API: All report data of projects***  \n");
+		System.out.println(" *** API: Client List ***  \n");
 
 		String token = login_marcom();
 
@@ -24,27 +24,26 @@ public class AllReportData extends login {
 		System.out.println("Token : " + token);
 		request.header("Authorization", "Bearer " + token);
 
+		
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
-
-		JSONArray jsonarray = new JSONArray();
-		jsonarray.add("278054311");
-
-		requestParams.put("accessibleWorkspaces", jsonarray);
-		requestParams.put("user_id", "60");
-		requestParams.put("date", "2020-11-6");
+		requestParams.put("search_name", "");
+		requestParams.put("sort_value", "company_name");
+		requestParams.put("sort_by", "ASC");
+		requestParams.put("is_archive", "1");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/timetrack/day/all-data?url_workspace_id=278054311");
+		Response response = request.post("api/v1/client/list?page=1&url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
-		System.out.println("/n Response body: " + response.getBody().jsonPath().prettify());
+
+		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
 		AssertJUnit.assertEquals(statusCode, 200);
 
-		System.out.println("\n\n ----------------------------------------------- \n\n");
+		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
 
 	}

@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Project;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,16 +7,17 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class AllProjectList extends login {
-	
-	@Test
-	public void projectList() throws Throwable {
+public class AddClientComment extends login {
 
-		System.out.println(" *** API: All Project List  *** \n" );
+	@Test(priority = 2)
+	public void AddingClientComment() throws Throwable {
+
+		System.out.println(" *** API: Add Client Comment in Project *** \n");
 
 		String token = login_marcom();
-		
+
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -25,19 +26,14 @@ public class AllProjectList extends login {
 
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
-		requestParams.put("client_id", "0");
-		requestParams.put("clientsOrNot", "");
-		requestParams.put("sortvalue", "");
-		requestParams.put("orderby", "");
-		requestParams.put("favourite_project", "0");
-		requestParams.put("recent_project", "0");
-		requestParams.put("project_owner_id", "0");
-		requestParams.put("archive_project", "0");
-		requestParams.put("is_collaborate", "0");
+		requestParams.put("project_id", "1340298153");
+		requestParams.put("published", "1");
+		requestParams.put("type", "client");
+		requestParams.put("comment", "This is Client Comment added by API - Tarang");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/list-all?page=1&sortvalue=null&orderBy=null&url_workspace_id=278054311");
+		Response response = request.post("api/v1/project/comment/general/add?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -47,8 +43,6 @@ public class AllProjectList extends login {
 		AssertJUnit.assertEquals(statusCode, 200);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
-
-		Thread.sleep(3000);
-		
+		Thread.sleep(3000); 
 	}
 }

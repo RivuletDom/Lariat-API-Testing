@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.General;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,13 +7,14 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class ClientList extends login {
+public class UserList extends login {
 
 	@Test
-	public void Clientlist() throws Throwable {
+	public void AllUserList() throws Throwable {
 
-		System.out.println(" *** API: Client List ***  \n");
+		System.out.println(" *** API: User List ***  \n");
 
 		String token = login_marcom();
 
@@ -23,17 +24,17 @@ public class ClientList extends login {
 		System.out.println("Token : " + token);
 		request.header("Authorization", "Bearer " + token);
 
-		
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
 		requestParams.put("search_name", "");
-		requestParams.put("sort_value", "company_name");
+		requestParams.put("type", "Users");
 		requestParams.put("sort_by", "ASC");
-		requestParams.put("is_archive", "1");
+		requestParams.put("sort_value", "");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/client/list?page=1&url_workspace_id=278054311");
+		Response response = request
+				.post("api/v1/user/list?page=1&type=Users&sort_value=&sort_by=&url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -44,6 +45,5 @@ public class ClientList extends login {
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
-
 	}
 }

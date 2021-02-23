@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Login;
 
 import org.json.simple.JSONObject;
 import org.testng.Assert;

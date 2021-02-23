@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Project;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
 public class AddGeneralComment extends login {
 

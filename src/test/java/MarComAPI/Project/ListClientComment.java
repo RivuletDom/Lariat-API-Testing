@@ -1,6 +1,4 @@
-package test.java.MarComAPI;
-
-import java.time.LocalTime;
+package test.java.MarComAPI.Project;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -9,19 +7,16 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class AddProjectTask extends login {
+public class ListClientComment extends login {
 
 	@Test(priority = 2)
-	public void AddingProjectTask() throws Throwable {
+	public void ListingClientComment() throws Throwable {
 
-		System.out.println(" *** API: Add Task in Project *** \n");
+		System.out.println(" *** API: List Client Comment in Project *** \n");
 
-		LocalTime time = LocalTime.now();
-	    System.out.println(time);
-	    
 		String token = login_marcom();
-		String task_name = "Task is added by API-QA - " + time;
 
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
@@ -32,12 +27,12 @@ public class AddProjectTask extends login {
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
 		requestParams.put("project_id", "1340298153");
-		requestParams.put("task_id", "0");
-		requestParams.put("task_title", task_name );
+		requestParams.put("type", "client");
+
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/task/add?url_workspace_id=278054311");
+		Response response = request.post("api/v1/project/comment/general/list?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);

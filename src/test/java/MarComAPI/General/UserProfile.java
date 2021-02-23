@@ -1,6 +1,5 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.General;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -8,13 +7,14 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class ViewBucketList extends login {
+public class UserProfile extends login {
 
-	@Test
-	public void ViewBucketListing() throws Throwable {
+	@Test(priority = 2)
+	public void UserProfileDetails() throws Throwable {
 
-		System.out.println(" *** API: View Bucket List ***  \n");
+		System.out.println(" *** API: User Profile Details *** \n");
 
 		String token = login_marcom();
 
@@ -25,27 +25,12 @@ public class ViewBucketList extends login {
 		request.header("Authorization", "Bearer " + token);
 
 		JSONObject requestParams = new JSONObject();
-		
-		JSONArray jsonarray = new JSONArray();
-		jsonarray.add("278054311");
-		jsonarray.add("195302813");
-
-		requestParams.put("workspace_id", jsonarray);
-		requestParams.put("project_id", "1340298153");
-		requestParams.put("client_id", "0");
-		requestParams.put("owner_id", "0");
-		requestParams.put("sortvalue", "");
-		requestParams.put("orderby", "");
-		requestParams.put("favourite", "0");
-		requestParams.put("recent", "0");
-		requestParams.put("archive", "0");
-		requestParams.put("start_date", "2020-12-01");
-		requestParams.put("end_date", "2021-02-28");
-
+		requestParams.put("user_id", user_id);
+		requestParams.put("workspace_id", workspace_id);
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/bucket/list?page=1&url_workspace_id=278054311");
+		Response response = request.post("api/v1/user/details?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -55,6 +40,6 @@ public class ViewBucketList extends login {
 		AssertJUnit.assertEquals(statusCode, 200);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
-		Thread.sleep(3000);
+		Thread.sleep(3000); 
 	}
 }

@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Project;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,16 +7,17 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class MyTaskList extends login {
-
+public class AllProjectList extends login {
+	
 	@Test
-	public void TaskList() throws Throwable {
+	public void projectList() throws Throwable {
 
-		System.out.println(" *** API: My Task List ***  \n");
+		System.out.println(" *** API: All Project List  *** \n" );
 
 		String token = login_marcom();
-
+		
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -25,16 +26,19 @@ public class MyTaskList extends login {
 
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
-		requestParams.put("user_id", "62");
-		requestParams.put("search_name", "");
-		requestParams.put("sort_value", "");
-		requestParams.put("sort_by", "");
-		requestParams.put("due_date", "");
-		requestParams.put("task_priority", "Priority");
+		requestParams.put("client_id", "0");
+		requestParams.put("clientsOrNot", "");
+		requestParams.put("sortvalue", "");
+		requestParams.put("orderby", "");
+		requestParams.put("favourite_project", "0");
+		requestParams.put("recent_project", "0");
+		requestParams.put("project_owner_id", "0");
+		requestParams.put("archive_project", "0");
+		requestParams.put("is_collaborate", "0");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/task/my-task?page=1&url_workspace_id=278054311");
+		Response response = request.post("api/v1/project/list-all?page=1&sortvalue=null&orderBy=null&url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -44,6 +48,8 @@ public class MyTaskList extends login {
 		AssertJUnit.assertEquals(statusCode, 200);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
+
 		Thread.sleep(3000);
+		
 	}
 }

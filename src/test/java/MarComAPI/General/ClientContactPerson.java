@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.General;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,16 +7,17 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class ViewProjectClientDetails extends login {
-
+public class ClientContactPerson extends login {
+	
 	@Test
-	public void ViewProjectClient() throws Throwable {
+	public void ClientContactPersonDetail() throws Throwable {
 
-		System.out.println(" *** API: View Project Client Details ***  \n");
+		System.out.println(" *** API: List of Client Contact Person  *** \n" );
 
 		String token = login_marcom();
-
+		
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -25,11 +26,12 @@ public class ViewProjectClientDetails extends login {
 
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
-		requestParams.put("project_id", "1340298153");
+		requestParams.put("client_id", "71");
+		requestParams.put("person_id", "2");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/client-detail?url_workspace_id=278054311");
+		Response response = request.post("api/v1/client/contact-person?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -40,5 +42,6 @@ public class ViewProjectClientDetails extends login {
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
+		
 	}
 }

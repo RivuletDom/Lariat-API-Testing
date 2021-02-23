@@ -1,4 +1,4 @@
-package test.java.MarComAPI;
+package test.java.MarComAPI.Tasks;
 
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
@@ -7,13 +7,14 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.java.MarComAPI.Login.login;
 
-public class ListBudgetComment extends login {
+public class ViewProjectTask extends login {
 
-	@Test(priority = 2)
-	public void ListingBudgetComment() throws Throwable {
+	@Test
+	public void ViewTaskDetail() throws Throwable {
 
-		System.out.println(" *** API: List Budget Comment in Project *** \n");
+		System.out.println(" *** API: View Project Tasks ***  \n");
 
 		String token = login_marcom();
 
@@ -26,10 +27,11 @@ public class ListBudgetComment extends login {
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("workspace_id", workspace_id);
 		requestParams.put("project_id", "1340298153");
+		requestParams.put("task_id", "102");
 
 		request.body(requestParams.toJSONString());
 
-		Response response = request.post("api/v1/project/comment/budget/list?url_workspace_id=278054311");
+		Response response = request.post("api/v1/project/task/view?url_workspace_id=278054311");
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
@@ -39,6 +41,6 @@ public class ListBudgetComment extends login {
 		AssertJUnit.assertEquals(statusCode, 200);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
-		Thread.sleep(3000); 
+		Thread.sleep(3000);
 	}
 }
