@@ -10,7 +10,7 @@ import io.restassured.specification.RequestSpecification;
 import test.java.MarComAPI.Login.login;
 
 public class ClientContactPerson extends login {
-	
+	public static String clientemail;
 	@Test
 	public void ClientContactPersonDetail() throws Throwable {
 
@@ -39,9 +39,14 @@ public class ClientContactPerson extends login {
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
 		AssertJUnit.assertEquals(statusCode, 200);
+		
+		clientemail = response.getBody().jsonPath().get("data.email");
+		System.out.println(clientemail);
 
 		System.out.println("\n\n ------------------------------------------------ \n\n");
 		Thread.sleep(3000);
 		
 	}
+	
+
 }
