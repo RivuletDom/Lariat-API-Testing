@@ -1,5 +1,7 @@
 package test.java.MarComAPI;
 
+import java.time.LocalTime;
+
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -15,7 +17,11 @@ public class AddProjectTask extends login {
 
 		System.out.println(" *** API: Add Task in Project *** \n");
 
+		LocalTime myObj = LocalTime.now();
+	    System.out.println(myObj);
+	    
 		String token = login_marcom();
+		String task_name = "Task is added by API-QA - " + myObj;
 
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
@@ -27,7 +33,7 @@ public class AddProjectTask extends login {
 		requestParams.put("workspace_id", workspace_id);
 		requestParams.put("project_id", "1340298153");
 		requestParams.put("task_id", "0");
-		requestParams.put("task_title", "\"Task is added by API-QA -  {{$isoTimestamp}}\"");
+		requestParams.put("task_title", task_name );
 
 		request.body(requestParams.toJSONString());
 
