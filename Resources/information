@@ -24,11 +24,11 @@ API List
 ----user roles and persmission
 ----add budget comment
 ----list budget comment
-add general comment
-add client comment
-list client comment
-add project task
-add task comment
+----add general comment
+----add client comment
+----list client comment
+----add project task
+----add task comment
 view project details
 project client detail
 bucket list
