@@ -17,11 +17,11 @@ public class AddProjectTask extends login {
 
 		System.out.println(" *** API: Add Task in Project *** \n");
 
-		LocalTime myObj = LocalTime.now();
-	    System.out.println(myObj);
+		LocalTime time = LocalTime.now();
+	    System.out.println(time);
 	    
 		String token = login_marcom();
-		String task_name = "Task is added by API-QA - " + myObj;
+		String task_name = "Task is added by API-QA - " + time;
 
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
