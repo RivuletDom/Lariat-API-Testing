@@ -29,21 +29,21 @@ API List
 ----list client comment
 ----add project task
 ----add task comment
-view project details
-project client detail
-bucket list
-bucket project list
-get activity log
-time dat list
-export coll project
-Bucket report
-detailed report list
-export detailed report list
-details report all data
-dashboard data
-dashboard my task list
-dashboard fav project list
-dashboard recent project
-dashboard activity log
-get recent search data
+----view project details
+----project client detail
+----bucket list
+----bucket project list
+----get activity log
+----time dat list
+----export coll project
+----Bucket report
+----detailed report list
+----export detailed report list
+----details report all data
+----dashboard data
+----dashboard my task list
+----dashboard fav project list
+----dashboard recent project
+----dashboard activity log
+----get recent search data
 
