@@ -1,0 +1,17 @@
+
+Jenkins + Ngrok + Github
+----------------------------
+
+
+
+1. Start jenkins from C:\Program Files\Jenkins (cmd: java -jar Jenkins.war)
+2. Chrome > http://localhost:2021/ >> Login (Dominic, admin)
+3. Open Ngrok command prompt (RD Server alpha > F:\ngrok-stable-windows-amd64\ngrok.exe )
+4. type: ngrok http 2021 (port should be same which is config with jenkins )
+5. check status: online in ngrok cmd
+6. Now, go to > https://dashboard.ngrok.com/status/tunnels and copy https tunnel URL. it is jenkins URL.
+7. Login with github repo > Settings > webhook > change URL to this new URL (https://85bce7853ce6.ngrok.io/github-webhook/)
+DONE!!!
+
+
+
