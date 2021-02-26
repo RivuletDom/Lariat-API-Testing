@@ -5,6 +5,8 @@ import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -16,8 +18,11 @@ public class ViewBucketList extends login {
 	public void ViewBucketListing() throws Throwable {
 
 		System.out.println(" *** API: View Bucket List ***  \n");
+		bucket = extent.createTest("View Bucket List");
+		bucket.log(Status.INFO, "Request API info: View Bucket List of all workspaces ");
 
 		String token = login_marcom();
+		
 
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
 		RequestSpecification request = RestAssured.given();
@@ -50,6 +55,8 @@ public class ViewBucketList extends login {
 		int statusCode = response.getStatusCode();
 
 		System.out.println("The status code recieved: " + statusCode);
+		bucket.log(Status.PASS, "Login successfull; Status code received : " +statusCode);
+
 
 		System.out.println("Response body: " + response.getBody().jsonPath().prettify());
 
