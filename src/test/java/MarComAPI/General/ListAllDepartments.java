@@ -16,6 +16,7 @@ public class ListAllDepartments extends login {
 	public void ListDepartments() throws Throwable {
 
 		System.out.println(" *** API: List All Departments of workspace***  \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

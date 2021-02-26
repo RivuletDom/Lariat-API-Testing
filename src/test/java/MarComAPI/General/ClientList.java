@@ -15,6 +15,7 @@ public class ClientList extends login {
 	public void Clientlist() throws Throwable {
 
 		System.out.println(" *** API: Client List ***  \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

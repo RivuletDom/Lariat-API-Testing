@@ -33,6 +33,12 @@ public class login {
 	public static ExtentReports extent;
 	public static ExtentTest login;
 	public static ExtentTest bucket;
+	public static ExtentTest general;
+	public static ExtentTest project;
+	public static ExtentTest task;
+	public static ExtentTest timetrack;
+
+	
 
 	static DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy_HHmmss");
 

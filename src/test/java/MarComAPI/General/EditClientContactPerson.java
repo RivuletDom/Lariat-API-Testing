@@ -16,6 +16,7 @@ public class EditClientContactPerson extends login {
 	public void EditClientDetails() throws Throwable {
 
 		System.out.println(" *** API: Edit Client Contact Person Details ***  \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

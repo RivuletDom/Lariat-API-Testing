@@ -15,6 +15,7 @@ public class DashboardData extends login {
 	public void Dashboard() throws Throwable {
 
 		System.out.println(" *** API: Display Dashboard Data *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

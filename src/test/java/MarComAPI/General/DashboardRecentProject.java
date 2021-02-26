@@ -15,6 +15,7 @@ public class DashboardRecentProject extends login {
 	public void DashboardRecentProjectList() throws Throwable {
 
 		System.out.println(" *** API: Show Recent Project List *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

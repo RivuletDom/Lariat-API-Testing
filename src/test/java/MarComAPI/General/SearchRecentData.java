@@ -15,6 +15,7 @@ public class SearchRecentData extends login {
 	public void RecentSearchList() throws Throwable {
 
 		System.out.println(" *** API: Recent Search term list *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

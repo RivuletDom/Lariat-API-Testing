@@ -15,6 +15,7 @@ public class DashboardFavProject extends login {
 	public void DashboardFavoriteProject() throws Throwable {
 
 		System.out.println(" *** API: Show Favourite Project List *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

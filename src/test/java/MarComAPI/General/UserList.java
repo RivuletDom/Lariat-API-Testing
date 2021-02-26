@@ -15,6 +15,7 @@ public class UserList extends login {
 	public void AllUserList() throws Throwable {
 
 		System.out.println(" *** API: User List ***  \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

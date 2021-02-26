@@ -15,6 +15,7 @@ public class DashboardActivity extends login {
 	public void DashboardActivityLog() throws Throwable {
 
 		System.out.println(" *** API: Dashboard Activity Log *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

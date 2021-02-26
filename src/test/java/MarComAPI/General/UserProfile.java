@@ -15,6 +15,7 @@ public class UserProfile extends login {
 	public void UserProfileDetails() throws Throwable {
 
 		System.out.println(" *** API: User Profile Details *** \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 

@@ -4,6 +4,8 @@ import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -15,10 +17,13 @@ public class ClientContactPerson extends login {
 	public void ClientContactPersonDetail() throws Throwable {
 
 		System.out.println(" *** API: List of Client Contact Person  *** \n" );
+		general = extent.createTest("API Testing for General API request");
 
 		String token = login_marcom();
 		
 		RestAssured.baseURI = "https://marcom20-production.whitelabeliq.net/";
+		general.log(Status.INFO, "Request API info: List of Client Contact Person ");
+
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
 		System.out.println("Token : " + token);

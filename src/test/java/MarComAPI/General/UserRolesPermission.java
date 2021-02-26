@@ -16,6 +16,7 @@ public class UserRolesPermission extends login {
 	public void RolesandPermission() throws Throwable {
 
 		System.out.println(" *** API: View User Roles and Permission   ***  \n");
+		general = extent.createTest("Login into MarCom");
 
 		String token = login_marcom();
 
