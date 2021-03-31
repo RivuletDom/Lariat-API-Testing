@@ -4,11 +4,11 @@
 	<test thread-count="5" name="Test">
 		<packages>
 			<package name="test.java.MarComAPI.Login" />
-			<!-- <package name="test.java.MarComAPI.General" />
+			<package name="test.java.MarComAPI.General" />
 			<package name="test.java.MarComAPI.Project" />
-			<package name="test.java.MarComAPI.Tasks" /> -->
+			<package name="test.java.MarComAPI.Tasks" />
 			<package name="test.java.MarComAPI.Bucket" />
-			<!-- <package name="test.java.MarComAPI.Timetrack" /> -->
+			<package name="test.java.MarComAPI.Timetrack" />
 		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
